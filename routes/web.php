@@ -31,3 +31,9 @@ Route::post('admin/category/add','CategoriesController@store');
 
 // Route::get('api/book', 'ApiController@test');
 // Route::post('api/book', 'ApiController@createBook');-
+
+Route::group(['prefix' => 'api'], function () {
+    Route::resource('users', 'UserController');    
+});
+Route::view('/{any}', 'welcome')
+    ->where('any', '.*');
