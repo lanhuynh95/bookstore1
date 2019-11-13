@@ -1,22 +1,21 @@
+import React from 'react'
+import { render } from 'react-dom'
+import {
+  Router,
+  Route,
+  Switch
+} from 'react-router-dom'
+import { createBrowserHistory } from 'history'
+import CreateUser from './components/CreateUser'
+import EditUser from './components/EditUser'
+import UserList from './components/UserList'
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
-require('./bootstrap');
-
-window.Vue = require('vue');
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-const app = new Vue({
-    el: '#app'
-});
+const history = createBrowserHistory()
+render (
+  <Router history={history}>
+    <Switch>
+      <Route path='/react/users/create' component={CreateUser} />
+      <Route path='/react/users/edit/:id' component={EditUser} />
+      <Route path='/react' component={UserList} />
+    </Switch>
+  </Router>, document.getElementById('example'))

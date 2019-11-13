@@ -38,7 +38,7 @@ class UserList extends Component {
       <App>
         <h1>Users</h1>
         <div className='clearfix'>
-          <Link className='btn btn-success pull-right' to='/users/create'>Add User</Link>
+          <Link className='btn btn-success pull-right' to='/react/users/create'>Add User</Link>
         </div><br />
         <table className='table table-hover'>
           <thead>

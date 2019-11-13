@@ -21,8 +21,8 @@ class App extends Component {
               </div>
               <div className='collapse navbar-collapse' id='app-navbar-collapse'>
                 <ul className='nav navbar-nav'>
-                  <li><Link to='/users'>Users</Link></li>
-                  <li><Link to='/users/create'>Add User</Link></li>
+                  <li><Link to='/react/users'>Users</Link></li>
+                  <li><Link to='/react/users/create'>Add User</Link></li>
                 </ul>
               </div>
             </div>

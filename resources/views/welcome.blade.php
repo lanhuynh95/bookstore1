@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 
         <!-- Styles -->
         <style>
@@ -81,7 +82,7 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+                <div id="example"></div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -91,5 +92,6 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

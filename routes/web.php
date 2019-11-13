@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/react', function () {
+    return view('react_web');
+});
+
 Route::get('home','BookController@index')->name('home');;
 Route::post('home','BookController@vote');
 Route::get('index','BookController@home');

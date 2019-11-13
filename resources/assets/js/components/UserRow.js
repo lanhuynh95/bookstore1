@@ -36,7 +36,7 @@ class UserRow extends Component {
           {this.props.obj.email}
         </td>
         <td>
-          <Link className='btn btn-primary' to={'/users/edit/' + this.props.obj.id}>Edit</Link>
+          <Link className='btn btn-primary' to={'/react/users/edit/' + this.props.obj.id}>Edit</Link>
         </td>
         <td>
           <button className='btn btn-danger' onClick={this.handleDelete}>Delete</button>
